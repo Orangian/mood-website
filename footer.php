@@ -16,7 +16,7 @@
         </a>
         <footer class="text">
             <div class="footerbar"></div>
-            <p id="footerdate"><?= $date ?>The Qern Industries</p>
+            <p id="footerdate"><?= $date ?> The Qern Industries</p>
         </footer>
     </body>      
 </html>
