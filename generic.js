@@ -14,6 +14,6 @@ function swatch() {
 if (document.getElementById("headlogo").src == "header-logo-dash.svg"){
     document.getElementById("headlogo").src = "header-logo-nodash.svg";
 } else {
-    document.getElementById("headlogo").src = "header-logo-nodash.svg";
+    document.getElementById("headlogo").src = "header-logo-dash.svg";
 }
 }
