@@ -11,9 +11,9 @@ function hide() {
 
 
 function swatch() {
-if (document.getElementById("headlogolink").src == "header-logo-dash.svg"){
-    document.getElementById("headlogolink").src = "header-logo-nodash.svg";
+if (document.getElementById("headlogo").src == "header-logo-dash.svg"){
+    document.getElementById("headlogo").src = "header-logo-nodash.svg";
 } else {
-    document.getElementById("headlogolink").src = "header-logo-dash.svg";
+    document.getElementById("headlogo").src = "header-logo-nodash.svg";
 }
 }
