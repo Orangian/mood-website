@@ -20,3 +20,5 @@ if (current.includes("header-logo-dash.svg") === true){
     current = document.getElementById("headlogo").src;
 }
 }
+
+var current = document.getElementById("headlogo").src;
