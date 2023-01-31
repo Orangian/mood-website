@@ -58,7 +58,7 @@ switch ($title) {
         <!-- Generic JS -->
         <script src="generic.js"></script>
         <!-- Page Title -->
-        <title><?= $titlefancy ?> - Qern Industries Web Portal</title>
+        <title><?= $titlefancy ?></title>
         <!-- Favicon -->
         <link rel="icon" type="image/x-icon" href="favicon.png">
         <!-- Page Specific CSS -->

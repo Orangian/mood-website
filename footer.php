@@ -23,4 +23,5 @@
 
 <?php
 date_default_timezone_set('America/New_York');
-$date = date('Y m l', time());
+$date = date('Y-m-d', time());
+?>

@@ -8,3 +8,9 @@ function show() {
 function hide() {
     document.getElementById(dropdown).style.visibility=hidden;
 }
+
+if (document.getElementById("headlogolink").src == "header-logo-dash.svg"){
+    document.getElementById("headlogolink").src = "header-logo-nodash.svg";
+} else {
+    document.getElementById("headlogolink").src = "header-logo-dash.svg";
+}
