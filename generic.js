@@ -20,10 +20,3 @@ if (current.includes("header-logo-dash.svg") === true){
     current = document.getElementById("headlogo").src;
 }
 }
-
-
-
-const string = "foo";
-const substring = "oo";
-
-console.log(string.includes(substring)); // true
