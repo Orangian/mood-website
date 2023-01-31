@@ -1,0 +1,6 @@
+px = borders, box shadows
+component root=rem
+width: 100%; height: 100vh;
+rem = paddings & margins
+ch = 60 for paragraphs (50-70);
+em = font sizes

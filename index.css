@@ -1,0 +1,247 @@
+/* News Block */
+#newsdiv {
+    margin-top: 2vw;
+    align-items: flex-start;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vw;
+    justify-content: flex-start;
+    height: 4vw;
+}
+
+#newsdiv > a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    color: #818281;
+    font-family: "Comfortaa";
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    height: 55%;
+    text-align: center;
+}
+
+
+#newsdiv > a > svg {
+    float: left;
+    width: 100%;
+}
+
+/* News Section */
+#news > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    color: #000;
+    font-size: 0.5vw;
+}
+
+.news {
+    font-size: 0.5vw;
+    text-decoration: none;
+}
+
+#news a:link, #news a:visited, #news a:hover, #news a:active, #news a:focus {
+    text-decoration: none;
+}
+
+#news a:hover, #news a:active, #news a:focus {
+    color: #802823;
+    transition: color .5s ease;
+}
+
+#news > h2 {
+    font-size: 1vw;
+}
+
+/* Bottom Gallery */
+#gallery {
+    width: 100%;
+    height: 12vw;;
+    display: flex;
+    object-fit: contain;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+#gallery a:link, #gallery a:visited, #gallery a:hover, #gallery a:active, #gallery a:focus {
+    text-decoration: none
+}
+
+#gallery > a > figure > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; 
+    object-position: left;
+}
+
+#gallery > a > figcaption {
+    display: flex;
+    flex-direction: column
+}
+
+/* Neue Scroll Gallery */
+#scrollgallery2 {
+    height: 20vw;
+    border-top-color: lightgray;
+    border-top-width: 1vw;
+    border-top-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width: 1vw;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+:root {
+    --img: url(xda80211.jpg);
+}
+
+#scrollgallery2::before {
+    background-image: var(--img);
+    content: "";
+    position: fixed;
+    left: -5%;
+    right: 0;
+    z-index: -1;
+    filter: blur(.5vw) brightness(60%);
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    width: 110%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    background-position: 0% 26%;
+    transition: background-image 2s ease;
+}
+
+#scrollgalimages2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -18vw;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 0;
+}
+
+#scrollgalimages2 > div {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+}
+
+#scrollgalimages2 > div > img {
+    border-radius: 5%;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#scrollgalleryfarleft {
+    left: -50%;
+}
+
+#scrollgalleryleft {
+    left: 6.25%;
+}
+
+#scrollgallerymain {
+    left: 37.5%;
+}
+
+#scrollgalleryright {
+    left: 68.75%;
+}
+
+#scrollgalleryfarright {
+    left: 150%;
+}
+
+.scrollgallerythings {
+    transition: left 2s ease;
+}
+
+.scrolltextcategory {
+    font-size: 0.5vw;
+}
+
+.scrolltexttitle {
+    font-size: 0.5vw;
+    font-family: "Comfortaa";
+    text-decoration: none;
+    color: #dd9350; 
+}
+.scrolltextsubtitle {
+    font-size: 0.6vw;
+    color: #fff;
+}
+
+#scrollgalimages2 > div > div {
+    position: absolute;
+    bottom: 3.6vw;
+    left: 0;
+    width: 100%;
+    line-height: 0.1vw;
+}
+
+#scrollgallerymain > div {
+    opacity: 1;
+}
+
+.scrollgalcontrols {
+    height: 2.5vw;
+    position: absolute;
+    top: 7.5vw;
+}
+
+#playpause > img {
+    height: inherit;
+    width: inherit;
+    top: inherit;
+    bottom: inherit;
+    position: inherit;
+}
+
+#playpause {
+    height: 0.5vw;
+    background-color: #fff;
+    position: absolute;
+    top: 8vw;
+    left: 49.5%;
+}
+
+.scrollgalcontrols > img {
+    height: inherit;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    position: inherit;
+}
+
+#scrollgalleft {
+    left: 33.5%
+}
+
+#scrollgalright {
+    right: 33.5%;
+}
+
+#scrollgalright > img{
+    transform: scaleX(-1);
+}
+
+.opacity {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#scrollgallerymainopacity {
+    transition: opacity 2s ease;
+}
+
