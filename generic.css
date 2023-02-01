@@ -6,16 +6,14 @@
         font-weight: bolder;
         text-decoration: none;
         color: #802823; 
+        font-size: 2em;
     }
 
     /* Subheading */
     .subhead {
         font-family: "Raleway";
         color: #dd9350;
-    }
-
-    .nounderline a:link, .nounderline a:visited, .nounderline a:hover, .nounderline a:active {
-        text-decoration: none;
+        font-size: 1.5em;
     }
 
     a:any-link {
@@ -25,6 +23,7 @@
     /* Normal Text */
     .text {
         font-family: "Zilla Slab";
+        font-size: 1em;
     }
 
 /* Elements */
@@ -34,25 +33,19 @@
         padding: 0;
         margin: 0;
         min-height: 100vh;
-        margin-top: 1vw;
-    }
-
-    .inner {
-        margin: 0 22.5vw 0 22.5vw;
+        margin-top: 1rem;
     }
 
     header {
-        width: 45vw;
-        margin: 0 27.5vw 0 27.5vw;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .headlogo {
-        left: 22vw;
-        width: 10vw;
-        position: absolute;
-        height: 3vw;
-        opacity: 1;
-        overflow: visible;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30ch;
     }
 
     main {
@@ -69,8 +62,8 @@
     font-family: "Raleway";
     color: #000000;
     list-style: none;
-    font-size: 1vw;
-    margin-top: 2vw;
+    font-size: 1em;
+    margin-top: 1rem;
     justify-content: space-evenly;
     padding-left: 0;
     font-weight: 900;
@@ -84,13 +77,13 @@
     width: 0;
     content: "";
     position: absolute;
-    height: .2vw;
+    height: .3ch;
     display: block;
     transition-property: width;
-    bottom: -.1vh;
+    bottom: -.1ch;
     transition: 0.32s cubic-bezier(0.42, 0.0, 0.0, 1);
     background-color: #802823;
-    border-radius: 1vw;
+    border-radius: 10px;
     
 }
 
@@ -119,10 +112,10 @@
 
 .uparrow {
     position: fixed;
-    bottom: 7vw;
+    bottom: 5vh;
     right: 3vw;
-    width: 2vw;
-    height: 2vw;
+    width: 5ch;
+    height: 5ch;
     background-color: #818281;
     display: flex;
     justify-content: center;
@@ -144,14 +137,14 @@ footer {
     background-color: #363737;
     color: white;
     width: 95%;
-    height: 4vw;
+    height: 4rem;
     margin-top: auto;
-    font-size: 1vw;
+    font-size: 0.8em;
     display: flex;
     flex-direction: column;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    padding-top: 2vw;
+    padding-top: 2rem;
 }
 
 .footerbar {
