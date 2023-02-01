@@ -55,6 +55,11 @@
         overflow: visible;
     }
 
+    main {
+        width: 60ch;
+        height: 100%;
+    }
+
 /* Header Nav Bar */
 .menubartop, .menubartop a:link, .menubartop a:visited {
     display: flex;

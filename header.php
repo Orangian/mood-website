@@ -97,4 +97,4 @@ switch ($title) {
                 </ul>
             </nav>
         </header>
-
+        <main>
