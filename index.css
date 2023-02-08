@@ -195,8 +195,12 @@ width: 60ch;
 margin-left: auto;
 }
 
-#img1 {display: flex; height: auto; width: 90%; margin-left: auto; margin-right: auto; object-fit: contain; background-image: var(--img1);}
-#img2 {display: flex; height: auto; width: 90%; margin-left: auto; margin-right: auto; object-fit: contain; background-image: var(--img2);}
+#pics > img {
+    display: flex; height: 90%; width: 90%; margin-left: auto; margin-right: auto; object-fit: cover; overflow: scroll;
+}
+
+#img1 {background-image: var(--img1);}
+#img2 {background-image: var(--img2);}
 
 
 input[type="radio"][name^="gabagool"] {
@@ -211,7 +215,7 @@ opacity: 0;
 --heading-font: "Comfortaa";
 --subheading-font: "Raleway";
 --text-font: "Zilla Slab";
---img1: url("./arugula-1471472.jpg");
+--img1: url("https://mood.qern-industries.pw/arugula-1471472.jpg");
 }
 
 #informal[type="radio"][name^="gabagool"]:checked ~ main {
