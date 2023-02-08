@@ -1,0 +1,241 @@
+/* Text */
+
+/* Heading */
+.heading {
+font-family: "Comfortaa";
+font-weight: bolder;
+text-decoration: none;
+color: #802823; 
+font-size: 2em;
+}
+
+/* Subheading */
+.subhead {
+font-family: "Raleway";
+color: #dd9350;
+font-size: 1.5em;
+}
+
+a:any-link {
+text-decoration: none;
+}   
+
+/* Normal Text */
+.text {
+font-family: "Zilla Slab";
+font-size: 1em;
+}
+
+/* Elements */
+body {
+display: flex;
+flex-direction: column;
+padding: 0;
+margin: 0;
+min-height: 100vh;
+margin-top: 1rem;
+}
+
+header {
+width: 45%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.headlogo {
+margin-left: auto;
+margin-right: auto;
+width: 30ch;
+}
+
+main {
+width: 120ch;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: row;
+object-fit: contain;
+}
+
+/* Header Nav Bar */
+.menubartop, .menubartop a:link, .menubartop a:visited {
+display: flex;
+flex-direction: row;
+font-family: "Raleway";
+color: #000000;
+list-style: none;
+font-size: 1em;
+margin-top: 1rem;
+justify-content: space-evenly;
+padding-left: 0;
+font-weight: 900;
+text-decoration: none;
+position: relative;
+max-width: 100%;
+padding: 0;
+}
+
+.menubartop a::after {
+width: 0;
+content: "";
+position: absolute;
+height: .3ch;
+display: block;
+transition-property: width;
+bottom: -.1ch;
+transition: 0.32s cubic-bezier(0.42, 0.0, 0.0, 1);
+background-color: #802823;
+border-radius: 10px;
+
+}
+
+.menubartop a:hover, .menubartop a:focus {
+color: #802823;
+transition: color .5s ease;
+}
+
+.menubartop a:hover::after, .menubartop a:focus::after {
+width: 100%;
+}
+
+.menubartop ul {
+visibility: hidden;
+position: fixed;
+}
+
+#currentpage a:hover, #currentpage a:focus {
+color: #dd9350;
+transition: color .5s ease;
+}
+
+#currentpage a::after {
+background-color: #dd9350;
+}
+
+.uparrow {
+position: fixed;
+bottom: 5vh;
+right: 3vw;
+width: 5ch;
+height: 5ch;
+background-color: #818281;
+display: flex;
+justify-content: center;
+vertical-align: middle;
+align-items: center;
+border-radius: 50%;
+
+}
+
+svg {
+width: 60%;
+height: 60%;
+object-fit: fill;
+}
+
+footer {
+margin: 0;
+padding: 0;
+background-color: #363737;
+color: white;
+width: 95%;
+height: 4rem;
+margin-top: auto;
+font-size: 0.8em;
+display: flex;
+flex-direction: column;
+padding-left: 2.5%;
+padding-right: 2.5%;
+padding-top: 2rem;
+}
+
+.footerbar {
+content: "";
+height: 0.1vw;
+background-color: #fff;
+border-radius: 1vw;
+width: 100%;
+}
+
+#pics {
+width: 60ch;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+
+
+::selection {
+background: #802823;
+}
+
+html, body {
+max-width: 100%;
+overflow-x: hidden;
+}
+
+#dropdown {
+background-color: #fff;
+z-index: 999;
+list-style: none;
+padding: 0vw;
+position: absolute;
+left: 12vw;
+top: 3vw;
+}
+
+#text {
+width: 60ch;
+}
+
+#img1 {display: block; height: auto; width: 100%;}
+
+input[type="radio"][name^="gabagool"] {
+display: absolute;
+position: absolute;
+opacity: 0;
+}
+
+
+#formal[type="radio"][name^="gabagool"]:checked ~ main {
+--test: brown;
+}
+
+#informal[type="radio"][name^="gabagool"]:checked ~ main {
+--test: green;
+}
+
+
+
+#formal[type="radio"]:checked~label[for=formal] {
+background-color: gray;
+}
+
+/* as above, for the "vehicle2" id and for attributes: */
+#informal[type="radio"]:checked~label[for=informal] {
+background-color: gray;
+}
+
+main {
+    background-color: var(--test);
+}
+
+label[for=formal] {
+    width: 8vw;
+    position: relative;
+    bottom: -1vw;
+    left: 40%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+label[for=informal] {
+    width: 8vw;
+    position: relative;
+    bottom: 1.3vw;
+    left: 50%;
+    font-size: 2vw;
+    text-align: center;
+}

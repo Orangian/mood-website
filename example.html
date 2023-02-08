@@ -1,0 +1,70 @@
+<html><head>
+    <style>
+        input[type="radio"][name^="vehicle"] {
+  display: absolute;
+  position: absolute;
+  opacity: 0;
+}
+
+
+#vehicle1[type="radio"][name^="vehicle"]:checked ~ div {
+  background-color: #ccc;
+}
+        
+#vehicle2[type="radio"][name^="vehicle"]:checked ~ div {
+  background-color: blue;
+}
+        
+#vehicle3[type="radio"][name^="vehicle"]:checked ~ div {
+  background-color: red;
+}
+        
+        
+
+#vehicle1[type="radio"]:checked~ul label[for=vehicle1] {
+  background-color: gray;
+}
+
+/* as above, for the "vehicle2" id and for attributes: */
+#vehicle2[type="radio"]:checked~ul label[for=vehicle2] {
+  background-color: gray;
+}
+
+#vehicle3[type="radio"]:checked~ul label[for=vehicle3] {
+  background-color: gray;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+}
+
+ul li label {
+  padding: 20px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+<input type="radio" id="vehicle1" name="vehicle" value="Bike">
+<input type="radio" id="vehicle2" name="vehicle" value="Car">
+<input type="radio" id="vehicle3" name="vehicle" value="Boat">
+<div class="modify-box">
+  Box to Change
+</div>
+<ul>
+  <li>
+    <label for="vehicle1"> Bike</label><br>
+  </li>
+  <li>
+    <label for="vehicle2"> Car</label><br>
+  </li>
+  <li>
+    <label for="vehicle3"> Boat</label><br>
+  </li>
+</ul>
+    
+
+
+</body></html>

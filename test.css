@@ -1,0 +1,25 @@
+input[type="radio"][name^="gabagool"] {
+  display: absolute;
+  position: absolute;
+  opacity: 0;
+}
+
+
+#formal[type="radio"][name^="gabagool"]:checked ~ main {
+  background-color: #ccc;
+}
+        
+#informal[type="radio"][name^="gabagool"]:checked ~ main {
+  background-color: blue;
+}
+        
+        
+
+#formal[type="radio"]:checked~label[for=formal] {
+  background-color: gray;
+}
+
+/* as above, for the "vehicle2" id and for attributes: */
+#informal[type="radio"]:checked~label[for=informal] {
+  background-color: gray;
+}
