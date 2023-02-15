@@ -1,18 +1,22 @@
 /* Text */
+.formalwheninformal {
+    font-family: "Comic Neue";
+}
+
 
 /* Heading */
 .heading {
 font-family: var(--heading-font);
 font-weight: bolder;
 text-decoration: none;
-color: #802823; 
+color: var(--heading-color); 
 font-size: 2em;
 }
 
 /* Subheading */
 .subhead {
 font-family: var(--subheading-font);
-color: #dd9350;
+color: var(--subheading-color);
 font-size: 1.5em;
 }
 
@@ -24,6 +28,7 @@ text-decoration: none;
 .text {
 font-family: var(--text-font);
 font-size: 1em;
+color: var(--text-color);
 }
 
 /* Elements */
@@ -36,17 +41,9 @@ min-height: 100%;
 margin-top: 1rem;
 }
 
-header {
-width: 45%;
-margin-left: auto;
-margin-right: auto;
-}
 
-.headlogo {
-margin-left: auto;
-margin-right: auto;
-width: 30ch;
-}
+
+
 
 main {
 width: 100%;
@@ -56,61 +53,6 @@ margin-right: auto;
 display: flex;
 flex-direction: column;
 object-fit: contain;
-}
-
-/* Header Nav Bar */
-.menubartop, .menubartop a:link, .menubartop a:visited {
-display: flex;
-flex-direction: row;
-font-family: "Raleway";
-color: #000000;
-list-style: none;
-font-size: 1em;
-margin-top: 1rem;
-justify-content: space-evenly;
-padding-left: 0;
-font-weight: 900;
-text-decoration: none;
-position: relative;
-max-width: 100%;
-padding: 0;
-}
-
-.menubartop a::after {
-width: 0;
-content: "";
-position: absolute;
-height: .3ch;
-display: block;
-transition-property: width;
-bottom: -.1ch;
-transition: 0.32s cubic-bezier(0.42, 0.0, 0.0, 1);
-background-color: #802823;
-border-radius: 10px;
-
-}
-
-.menubartop a:hover, .menubartop a:focus {
-color: #802823;
-transition: color .5s ease;
-}
-
-.menubartop a:hover::after, .menubartop a:focus::after {
-width: 100%;
-}
-
-.menubartop ul {
-visibility: hidden;
-position: fixed;
-}
-
-#currentpage a:hover, #currentpage a:focus {
-color: #dd9350;
-transition: color .5s ease;
-}
-
-#currentpage a::after {
-background-color: #dd9350;
 }
 
 .uparrow {
@@ -125,7 +67,7 @@ justify-content: center;
 vertical-align: middle;
 align-items: center;
 border-radius: 50%;
-
+opacity: var(--opacity);
 }
 
 svg {
@@ -134,23 +76,7 @@ height: 60%;
 object-fit: fill;
 }
 
-footer {
-margin: 0;
-padding: 0;
-background-color: #363737;
-color: white;
-width: 95%;
-height: 4rem;
-margin-top: auto;
-font-size: 0.8em;
-display: flex;
-flex-direction: column;
-padding-left: 2.5%;
-padding-right: 2.5%;
-padding-top: 2rem;
-    position: absolute;
-bottom: -2vw;
-}
+
 
 .footerbar {
 content: "";
@@ -166,6 +92,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 margin-right: auto;
+border: 0;
+border-color: #fff;
 }
 
 
@@ -195,13 +123,13 @@ width: 60ch;
 margin-left: auto;
 }
 
-#pics > img {
-    display: flex; height: 90%; width: 90%; margin-left: auto; margin-right: auto; object-fit: cover; overflow: scroll;
+#pics > div {
+    display: flex; height: 90%; width: 90%; margin-left: auto; margin-right: auto; background-size: contain; overflow: scroll; background-repeat: no-repeat; background-position: center; 
 }
 
 #img1 {background-image: var(--img1);}
 #img2 {background-image: var(--img2);}
-
+#headlogo {background-image: var(--head);}
 
 input[type="radio"][name^="gabagool"] {
 display: absolute;
@@ -209,17 +137,40 @@ position: absolute;
 opacity: 0;
 }
 
+footer {
+    flex-direction: column;
+    display: flex;
+    color: var(--footer-color);
+}
 
 #formal[type="radio"][name^="gabagool"]:checked ~ main {
---bg-color: #fff;
 --heading-font: "Comfortaa";
 --subheading-font: "Raleway";
 --text-font: "Zilla Slab";
---img1: url("https://mood.qern-industries.pw/arugula-1471472.jpg");
+--img1: url("https://raw.githubusercontent.com/Orangian/mood-website/master/arugula-1471472.jpg");
+--img2: url("https://raw.githubusercontent.com/Orangian/mood-website/master/flowers-7299979.jpg");
+--opacity: 1;
+--heading-color: #802823;
+--subheading-color: #dd9350;
+--text-color: #000;
+--footer-color: #fff;
+--footer-bg: #363737;
+}
+
+#formal[type="radio"][name^="gabagool"]:checked ~ a {
+--head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg");
 }
 
 #informal[type="radio"][name^="gabagool"]:checked ~ main {
 --test: green;
+--opacity: 0;
+--heading-font: "Impact";
+--subheading-font: "Impact";
+--text-font: "Comic Neue";
+--heading-color: orange;
+--subheading-color: red;
+--text-color: blue;
+--footer-bg: #34568B;
 }
 
 #formal[type="radio"][name^="gabagool"]:checked ~ label {
@@ -228,14 +179,44 @@ opacity: 0;
 --text-font: "Zilla Slab";
 }
 
+#informal[type="radio"][name^="gabagool"]:checked ~ label {
+--heading-font: "Impact";
+--subheading-font: "Impact";
+--text-font: "Comic Neue";
+}
+
+
+#archaic[type="radio"][name^="gabagool"]:checked ~ a {
+--head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg");
+}
+
+#archaic[type="radio"][name^="gabagool"]:checked ~ main {
+--heading-font: "Comfortaa";
+--subheading-font: "Raleway";
+--text-font: "Zilla Slab";
+--img1: url("https://raw.githubusercontent.com/Orangian/mood-website/master/arugula-1471472.jpg");
+--img2: url("https://raw.githubusercontent.com/Orangian/mood-website/master/flowers-7299979.jpg");
+--opacity: 1;
+--heading-color: #802823;
+--subheading-color: #dd9350;
+--text-color: #000;
+--footer-color: #fff;
+--footer-bg: #363737;
+}
+
 #formal[type="radio"]:checked~label[for=formal] {
 background-color: #dd9350;
 
 }
 
+#archaic[type="radio"]:checked~label[for=archaic] {
+background-color: #E8DCB8;
+
+}
+
 /* as above, for the "vehicle2" id and for attributes: */
 #informal[type="radio"]:checked~label[for=informal] {
-background-color: gray;
+background-color: aqua;
 }
 
 main {
@@ -243,11 +224,20 @@ main {
     
 }
 
+#headlogo {
+margin-left: auto;
+margin-right: auto;
+width: 30ch;
+height: 7vw;
+min-height: 50px;
+background-size: contain; overflow: scroll; background-repeat: no-repeat; background-position: center; }
+
+
 label[for=formal] {
     width: 8vw;
     position: relative;
     bottom: -1vw;
-    left: 40%;
+    left: 30%;
     font-size: 2vw;
     text-align: center;
 }
@@ -256,9 +246,18 @@ label[for=informal] {
     width: 8vw;
     position: relative;
     bottom: 1.3vw;
-    right: -52%;
+    right: -46%;
     font-size: 2vw;
     text-align: center;
+}
+
+label[for=archaic] {
+    width: 8vw;
+    position: relative;
+    font-size: 2vw;
+    text-align: center;
+    bottom: 3.6vw;
+    right: -61%;
 }
 
 #wrapper {
@@ -268,7 +267,29 @@ label[for=informal] {
     margin-right: auto;
 }
 
-#footer {
-    flex-direction: column;
-    display: flex;
+
+
+/* Normal Text */
+.footertext {
+font-family: var(--text-font);
+font-size: 1em;
+color: var(--footer-color);
+}
+
+footer {
+margin: 0;
+padding: 0;
+background-color: var(--footer-bg);
+color: white;
+width: 95%;
+height: 4rem;
+margin-top: auto;
+font-size: 0.8em;
+display: flex;
+flex-direction: column;
+padding-left: 2.5%;
+padding-right: 2.5%;
+padding-top: 2rem;
+    position: absolute;
+bottom: -2vw;
 }
