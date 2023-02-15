@@ -161,16 +161,22 @@ footer {
 --head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg");
 }
 
+#informal[type="radio"][name^="gabagool"]:checked ~ a {
+--head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/qern.svg");
+}
+
 #informal[type="radio"][name^="gabagool"]:checked ~ main {
---test: green;
+--heading-font: "pilsner";
+--subheading-font: "pilsner";
+--text-font: "libre-franklin";
+--img1: url("https://raw.githubusercontent.com/Orangian/mood-website/master/arugula.avif");
+--img2: url("");
 --opacity: 0;
---heading-font: "Impact";
---subheading-font: "Impact";
---text-font: "Comic Neue";
---heading-color: orange;
---subheading-color: red;
---text-color: blue;
---footer-bg: #34568B;
+--heading-color: #000;
+--subheading-color: #000;
+--text-color: #000;
+--footer-color: #fff;
+--footer-bg: #fff;
 }
 
 #formal[type="radio"][name^="gabagool"]:checked ~ label {
@@ -180,28 +186,36 @@ footer {
 }
 
 #informal[type="radio"][name^="gabagool"]:checked ~ label {
---heading-font: "Impact";
---subheading-font: "Impact";
---text-font: "Comic Neue";
+--heading-font: "pilsner";
+--subheading-font: "pilsner";
+--text-font: "libre-franklin";
+}
+
+
+#archaic[type="radio"][name^="gabagool"]:checked ~ label {
+--heading-font: "crayonette-djr"; 
+--subheading-font: "oddity-script";
+--text-font: "oddity-script";
+border-radius: 50%;
 }
 
 
 #archaic[type="radio"][name^="gabagool"]:checked ~ a {
---head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg");
+--head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/logo-undashed-sketched-black-text.svg");
 }
 
 #archaic[type="radio"][name^="gabagool"]:checked ~ main {
---heading-font: "Comfortaa";
---subheading-font: "Raleway";
---text-font: "Zilla Slab";
---img1: url("https://raw.githubusercontent.com/Orangian/mood-website/master/arugula-1471472.jpg");
---img2: url("https://raw.githubusercontent.com/Orangian/mood-website/master/flowers-7299979.jpg");
---opacity: 1;
---heading-color: #802823;
---subheading-color: #dd9350;
+--heading-font: "crayonette-djr"; 
+--subheading-font: "oddity-script";
+--text-font: "oddity-script";
+--img1: url("https://species-id.net/o/media/a/ab/Linedrawing_Eruca_vesicaria.gif");
+--img2: url("https://upload.wikimedia.org/wikipedia/commons/d/dd/Eruca_sativa_USDA-plants.jpg");
+--opacity: 0;
+--heading-color: #000;
+--subheading-color: #000;
 --text-color: #000;
 --footer-color: #fff;
---footer-bg: #363737;
+--footer-bg: #fff;
 }
 
 #formal[type="radio"]:checked~label[for=formal] {
