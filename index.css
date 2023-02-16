@@ -45,15 +45,6 @@ margin-top: 1rem;
 
 
 
-main {
-width: 100%;
-height: 100%;
-margin-left: auto;
-margin-right: auto;
-display: flex;
-flex-direction: column;
-object-fit: contain;
-}
 
 .uparrow {
 position: fixed;
@@ -169,14 +160,15 @@ footer {
 --heading-font: "pilsner";
 --subheading-font: "pilsner";
 --text-font: "libre-franklin";
---img1: url("https://raw.githubusercontent.com/Orangian/mood-website/master/arugula.avif");
+--img1: url("https://raw.githubusercontent.com/Orangian/mood-website/master/arugula.png");
 --img2: url("");
 --opacity: 0;
---heading-color: #000;
---subheading-color: #000;
---text-color: #000;
+--heading-color: #8C7F26;
+--subheading-color: #8C6142;
+--text-color: #8C7F26;
 --footer-color: #fff;
---footer-bg: #fff;
+--footer-bg: #34568B;
+--bgcolor: #34568B;
 }
 
 #formal[type="radio"][name^="gabagool"]:checked ~ label {
@@ -230,7 +222,8 @@ background-color: #E8DCB8;
 
 /* as above, for the "vehicle2" id and for attributes: */
 #informal[type="radio"]:checked~label[for=informal] {
-background-color: aqua;
+background-color: #34568B;
+border-radius: 10%;
 }
 
 main {
@@ -306,4 +299,16 @@ padding-right: 2.5%;
 padding-top: 2rem;
     position: absolute;
 bottom: -2vw;
+}
+
+
+main {
+width: 100%;
+height: 100%;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+object-fit: contain;
+background-color: var(--bgcolor);
 }
