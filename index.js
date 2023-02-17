@@ -8,9 +8,11 @@ function swatch() {
         formalswatch();
     } else if (document.getElementById("informal").checked) {
         true
-    } else if (document.getElementById("archaic").checked)
+    } else if (document.getElementById("archaic").checked) {
         archaicswatch();
+    }
 }
+
 
 function formalswatch() {
     var element = document.getElementById("headlogo");
@@ -33,5 +35,16 @@ function archaicswatch() {
 }
 
 function formaldefault() {
-    
+        var element = document.getElementById("headlogo");
+        element.style.setProperty('--head', "url(https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg)");
+}
+
+function informaldefault() {
+        var element = document.getElementById("headlogo");
+        element.style.setProperty('--head', "url(https://raw.githubusercontent.com/Orangian/mood-website/master/qern.svg)");
+}
+
+function archaicdefault() {
+        var element = document.getElementById("headlogo");
+        element.style.setProperty('--head', "url(https://raw.githubusercontent.com/Orangian/mood-website/master/logo-undashed-sketched-black-text.svg)");
 }
