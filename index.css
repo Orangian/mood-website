@@ -149,7 +149,7 @@ footer {
 }
 
 #formal[type="radio"][name^="gabagool"]:checked ~ a {
---head: url("https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg");
+--head: url(https://raw.githubusercontent.com/Orangian/mood-website/master/header-logo-nodash.svg);
 }
 
 #informal[type="radio"][name^="gabagool"]:checked ~ a {
