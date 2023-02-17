@@ -84,6 +84,7 @@ flex-direction: column;
 justify-content: space-evenly;
 margin-right: auto;
 border: 0;
+max-width: 100%;
 border-color: #fff;
 }
 
@@ -272,6 +273,7 @@ label[for=archaic] {
     width: 120ch;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
 
@@ -311,4 +313,5 @@ display: flex;
 flex-direction: column;
 object-fit: contain;
 background-color: var(--bgcolor);
+max-width: 100%;
 }
