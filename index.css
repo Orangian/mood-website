@@ -282,7 +282,7 @@ label[for=archaic] {
     max-width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #wrapper {
         flex-direction: column;
     }
