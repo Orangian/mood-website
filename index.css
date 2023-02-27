@@ -89,6 +89,7 @@ border: 0;
 max-width: 100%;
 border-color: #fff;
 min-height: 60ch;
+overflow-y: scroll;
 }
 
 
@@ -117,6 +118,7 @@ top: 3vw;
 width: 60ch;
 margin-left: auto;
 margin-right: auto;
+overflow-y: scroll;
 }
 
 #pics > div {
